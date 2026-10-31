@@ -28,7 +28,7 @@ pipeline {
           passwordVariable: 'dockerHubPassword'
         )]) {
           sh 'echo "$dockerHubPassword" | docker login -u "$dockerHubUser" --password-stdin'
-          sh 'docker push TU_USUARIO_DOCKERHUB/spring-petclinic:gestion-udem-jenkins'
+          sh 'docker push juantafur10/spring-petclinic:gestion-udem-jenkins'
         }
       }
     }
